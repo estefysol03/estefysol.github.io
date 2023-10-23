@@ -134,19 +134,20 @@
     </div>
     
     <h3>Formulario de Contacto</h3>
-    <form action="procesar_formulario.php" method="post">
+    <form onsubmit="return validarFormulario()">
+
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
+        <input type="text" id="nombre" name="nombre">
         
         <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email">
         
         <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" required></textarea>
+        <textarea id="mensaje" name="mensaje"></textarea>
         
         <button type="submit">Enviar</button>
     </form>
-    
+    <p id="pSaludo"></p>
     <hr>
 
     <h3>Ubicacion</h3>
@@ -154,7 +155,12 @@
     
 <hr>
 
+
+
+
 <div id="carousel-container">
+
+    
     <ul id="image-list">
         <li><img src="img/imagen1.jpg" alt="Imagen 1"></li>
         <li><img src="img/imagen2.jpg" alt="Imagen 2"></li>
@@ -167,6 +173,8 @@
         <li><img src="img/imagen9.jpg" alt="Imagen 9"></li>
         
     </ul>
+    <button id="prev-button" onclick="prevImage()">Anterior</button>
+    <button id="next-button" onclick="nextImage()">Siguiente</button>
 </div>
 
 
