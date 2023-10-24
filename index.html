@@ -134,20 +134,27 @@
     </div>
     
     <h3>Formulario de Contacto</h3>
-    <form onsubmit="return validarFormulario()">
+<p>Dejanos tu Mensaje</p>
 
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre">
-        
-        <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email">
-        
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje"></textarea>
-        
-        <button type="submit">Enviar</button>
-    </form>
-    <p id="pSaludo"></p>
+<form onsubmit="return validarFormulario()" id="frm">
+
+    <label for="f_nombre">Nombre:</label>
+    <input type="text" id="f_nombre" name="f_nombre">
+
+    <label for="f_email">Correo Electrónico:</label>
+    <input type="email" id="f_email" name="f_email">
+
+    <label for="f_mensaje">Mensaje:</label>
+    <textarea id="f_mensaje" name="f_mensaje"></textarea>
+
+    <button type="submit" id="btnEnviar">Enviar</button>
+</form>
+
+<p id="envioForm"></p>
+
+<ul id="ltaErrores">
+</ul>
+    
     <hr>
 
     <h3>Ubicacion</h3>
