@@ -2,7 +2,15 @@
 
 
 /* CSS para el encabezado */
-
+#header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #491d1d;
+    color: #fff;
+    z-index: 100; /* Asegura que el encabezado este por encima del contenido */
+}
 
 .encabezado {
     background-color: #491d1d; 
@@ -10,9 +18,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center; /* Centra verticalmente el contenido */
-    padding: 20px; /* Añade espacio alrededor del contenido del encabezado */
-  
+    padding: 2px; /* Añade espacio alrededor del encabezado */
+   
+    width: 95%;
 }
+
+/*agregado reciente*/
+#content {
+    margin-top: 80px; /* Ajusta este valor según tus necesidades */
+}
+
+
 
 .logo-img {
     width: 100px; 
@@ -84,7 +100,7 @@ body {
    
 form {
     background-color: #e67878;
-    padding: 25px;
+    padding: 30px;
     border: 5px inset ;
     border-radius: 5px;
     width: 400px;
@@ -130,25 +146,12 @@ form {
 
   /*CARROUSEL */
 
-  #carousel-container {
-    width: 400px; /* Ajusta el ancho */
-    overflow: hidden;
-    margin: 0 auto;
-   
-}
+  
 
+#carousel-container {
+    text-align: center;
+}
 #image-list {
     list-style: none;
     padding: 0;
-   margin:0;
-    display: flex;
-    transition: transform 0.5s ease-in-out;;
-}
-
-#image-list li {
-    flex: 0 0 400px;
-}
-#image-list img {
-    width: 100%; /* Asegura que las imagenes se ajusten al ancho del contenedor */
-    height: auto; 
 }
