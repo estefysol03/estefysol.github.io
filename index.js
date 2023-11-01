@@ -86,7 +86,17 @@ function validarFormulario() {
         errores.push("Falta el email");
         campo_error = f_email;
         f_email.classList.add("error");
+    } else {
+        // Utilizamos una expresión regular para validar el formato del correo electrónico.
+        const emailValido = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        if (!emailValido.test(email)) {
+            errores.push("El email no es válido");
+            campo_error = f_email;
+            f_email.classList.add("error");
+        }
+
     }
+
 
     if (mensaje == "") {
         errores.push("Falta el mensaje");

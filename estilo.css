@@ -23,9 +23,9 @@
     width: 95%;
 }
 
-/*agregado reciente*/
+
 #content {
-    margin-top: 80px; /* Ajusta este valor según tus necesidades */
+    margin-top: 80px; /* Ajusta este valor segun tus necesidades */
 }
 
 
@@ -63,8 +63,39 @@
     margin-top: 20px;
 }
 
+.imagen-cabanas {
+    width: 100%;
+    height:auto;
+}
+/*NUEVOS*/
+
+ul {
+    list-style: none; /* Quita los puntos de lista */
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline; /* Muestra los elementos en línea */
+    margin-right: 20px; /* Espaciado entre elementos del menú */
+}
+
+/* Estilo para los enlaces de los menu*/
+li a {
+    text-decoration: none; /* Quita la subrayado predeterminado de los enlaces */
+    color: #333; /* Color del texto */
+    font-weight: bold; /* Texto en negrita */
+}
+
+li a:hover {
+    color: #0078d4; /* Color del texto cuando se pasa el cursor */
+}
+
+
+
+
 body {
-    background-color: rgb(139, 146, 157);
+    background-color: rgb(177, 188, 154);
 }
 
 
